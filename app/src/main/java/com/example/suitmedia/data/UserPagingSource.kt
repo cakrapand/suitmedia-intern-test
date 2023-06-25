@@ -1,9 +1,7 @@
 package com.example.suitmedia.data
 
-import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.suitmedia.data.remote.response.Response
 import com.example.suitmedia.data.remote.response.User
 import com.example.suitmedia.data.remote.retrofit.ApiService
 

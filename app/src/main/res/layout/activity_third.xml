@@ -13,13 +13,14 @@
         android:src="@drawable/ic_back"
         android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/back_button" />
 
     <TextView
         android:id="@+id/tv_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Third Screen"
+        android:text="@string/third_screen"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_back"
@@ -56,7 +57,6 @@
 
     <ProgressBar
         android:id="@+id/pb_third"
-        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

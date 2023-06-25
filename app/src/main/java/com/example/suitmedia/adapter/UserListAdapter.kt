@@ -1,10 +1,7 @@
 package com.example.suitmedia.adapter
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.app.ActivityOptionsCompat
-import androidx.core.util.Pair
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -23,7 +20,7 @@ class UserListAdapter(private val onClick: (User) -> Unit) : PagingDataAdapter<U
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = getItem(position)
         if (data != null) {
-            holder.binding.tvItemName.text = "${data.firstName} ${data.lastName}"
+            "${data.firstName} ${data.lastName}".also { holder.binding.tvItemName.text = it }
             holder.binding.tvItemEmail.text = data.email
             Glide.with(holder.itemView)
                 .load(data.avatar)

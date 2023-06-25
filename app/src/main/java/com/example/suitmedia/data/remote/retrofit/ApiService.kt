@@ -2,7 +2,6 @@ package com.example.suitmedia.data.remote.retrofit
 
 import com.example.suitmedia.data.remote.response.Response
 import retrofit2.http.GET
-import retrofit2.http.Header
 import retrofit2.http.Query
 
 interface ApiService {

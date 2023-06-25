@@ -22,9 +22,7 @@ class LoadingStateAdapter(private val retry: () -> Unit) : LoadStateAdapter<Load
             binding.btnRetry.setOnClickListener { retry.invoke() }
         }
         fun bind(loadState: LoadState) {
-            if (loadState is LoadState.Error) {
-                binding.tvError.text = loadState.error.localizedMessage
-            }
+            if (loadState is LoadState.Error) { binding.tvError.text = loadState.error.localizedMessage }
             binding.pbPaging.isVisible = loadState is LoadState.Loading
             binding.btnRetry.isVisible = loadState is LoadState.Error
             binding.tvError.isVisible = loadState is LoadState.Error

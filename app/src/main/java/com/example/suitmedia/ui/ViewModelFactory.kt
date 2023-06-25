@@ -11,12 +11,6 @@ class ViewModelFactory(private val repository: Repository) : ViewModelProvider.N
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
             return MainViewModel(repository) as T
         }
-//        if (modelClass.isAssignableFrom(SecondViewModel::class.java)) {
-//            return SecondViewModel(repository, date) as T
-//        }
-//        if (modelClass.isAssignableFrom(ThirdViewModel::class.java)) {
-//            return ThirdViewModel(repository) as T
-//        }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
 

@@ -13,13 +13,14 @@
         android:src="@drawable/ic_back"
         android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/back_button"/>
 
     <TextView
         android:id="@+id/tv_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second Screen"
+        android:text="@string/second_screen"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_back"
@@ -42,7 +43,7 @@
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line" />
@@ -51,9 +52,9 @@
         android:id="@+id/tv_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="John Doe"
         android:textSize="16sp"
         android:textStyle="bold"
+        tools:text="Muhammad Cakra"
         app:layout_constraintStart_toStartOf="@+id/tv_welcome"
         app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 
@@ -61,7 +62,7 @@
         android:id="@+id/tv_selected_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selected User Name"
+        android:text="@string/selected_user_name"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btn_choose_user"
@@ -74,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:text="Choose a User"
+        android:text="@string/choose_a_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

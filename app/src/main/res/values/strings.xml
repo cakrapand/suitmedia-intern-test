@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">suitmedia</string>
+    <string name="full_name">%1$s %2$s</string>
+    <string name="is_palindrome">isPalindrome</string>
+    <string name="not_palindrome">not palindrome</string>
+    <string name="data_empty">Data is empty</string>
+    <string name="data_error">Error, pull to refresh</string>
+    <string name="name">Name</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="check">CHECK</string>
+    <string name="next">NEXT</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="welcome">Welcome</string>
+    <string name="selected_user_name">Selected User Name</string>
+    <string name="choose_a_user">Choose a User</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="back_button">Back Button</string>
+    <string name="retry">Retry</string>
 </resources>

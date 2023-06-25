@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
+import com.example.suitmedia.R
 import com.example.suitmedia.databinding.ActivityFirstBinding
 import com.example.suitmedia.ui.MainViewModel
 import com.example.suitmedia.ui.ViewModelFactory
@@ -28,9 +29,9 @@ class FirstActivity : AppCompatActivity() {
         binding.btnCheck.setOnClickListener {
             val str = binding.edPalindrome.text.toString().trim()
             if(mainViewModel.isPalindrome(str)){
-                Toast.makeText(this@FirstActivity, "isPalindrome", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@FirstActivity, getString(R.string.is_palindrome), Toast.LENGTH_SHORT).show()
             }else{
-                Toast.makeText(this@FirstActivity, "not palindrome", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@FirstActivity, getString(R.string.not_palindrome), Toast.LENGTH_SHORT).show()
             }
         }
 
