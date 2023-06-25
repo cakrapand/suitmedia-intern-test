@@ -10,7 +10,8 @@ class UserPagingSource (private val apiService: ApiService) : PagingSource<Int, 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, User> {
         return try {
             val position = params.key ?: INITIAL_PAGE_INDEX
-            val responseData = apiService.getListUsers(position, params.loadSize)
+            val responseData = apiService.getListUsers(position, 5)
+//            val responseData = apiService.getListUsers(position, params.loadSize)
             LoadResult.Page(
                 data = responseData.data,
                 prevKey = if (position == INITIAL_PAGE_INDEX) null else position - 1,
